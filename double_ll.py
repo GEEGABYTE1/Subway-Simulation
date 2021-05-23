@@ -43,7 +43,7 @@ class DoubleLinkedList:
         new_tail = Node(new_value)
         current_tail = self.tail_node
 
-        if current_tail.get_value() != None:
+        if current_tail != None:
             current_tail.set_link(new_tail)
             new_tail.set_prev_link(current_tail) 
         
